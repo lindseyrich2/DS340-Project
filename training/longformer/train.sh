@@ -1,5 +1,6 @@
 # MODEL=bert-base-cased
-plm_dir="allenai/longformer-base-4096"
+plm_dir="allenai/longformer-base-4096" # model name
+# need --model_name_or_path, --output_dir
 seed=42629309
 data_path="./data/cross_domains_cross_models"
 train_file="$data_path/train.csv"
