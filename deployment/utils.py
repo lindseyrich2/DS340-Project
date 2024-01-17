@@ -3,6 +3,9 @@ import torch
 from cleantext import clean
 from itertools import chain
 
+from regex import regex
+
+
 class MosesPunctNormalizer:
     """
     This is a Python port of the Moses punctuation normalizer from

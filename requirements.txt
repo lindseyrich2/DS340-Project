@@ -37,9 +37,9 @@ safetensors==0.4.1
 setuptools==68.0.0
 six==1.16.0
 tokenizers==0.15.0
-torch==1.13.1+cu116
-torchaudio==0.13.1+cu116
-torchvision==0.14.1+cu116
+torch==1.13.1
+torchaudio==0.13.1
+torchvision==0.14.1
 tqdm==4.66.1
 transformers==4.35.2
 typing_extensions==4.8.0
