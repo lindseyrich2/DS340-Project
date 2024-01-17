@@ -69,17 +69,23 @@ model_sets = [
 ]
 
 data_dir = sys.argv[1]
+# python3 prepare_testbeds
+# python3 prepare_testbeds data
+
 dataset = load_dataset("yaful/DeepfakeTextDetect")
 if not os.path.exists(data_dir):
     os.makedirs(data_dir)
-"""
+
+'''
 csv_path = f"{data_dir}/train.csv"
 train_results = list(csv.reader(open(csv_path,encoding='utf-8-sig')))[1:]
 csv_path = f"{data_dir}/valid.csv"
 valid_results = list(csv.reader(open(csv_path,encoding='utf-8-sig')))[1:]
 csv_path = f"{data_dir}/test.csv"
 test_results = list(csv.reader(open(csv_path,encoding='utf-8-sig')))[1:]
-"""
+'''
+
+
 train_results = [
     (row["text"], str(row["label"]), row["src"]) for row in list(dataset["train"])
 ]
